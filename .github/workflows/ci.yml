@@ -22,7 +22,7 @@ jobs:
         with: # 自定义环境变量
           token: ${{ secrets.TEST_A_B }} # GITACTION_TEST_SECRET 是我的 secret 名称
           branch: main
-          folder: dist
+          folder: build
           repository-name: jianyixing/jianyixing.github.io # 这是我的 github page 仓库
           target-folder: github-actions-demo # 打包的文件将放到静态服务器 github-actions-demo 目录下
           # ssh-ACCESS_TOKEN: ${{ secrets.GITACTION_TEST_SECRET }} # GITACTION_TEST_SECRET 是我的 secret 名称
