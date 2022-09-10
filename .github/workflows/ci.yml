@@ -20,7 +20,7 @@ jobs:
       - name: Deploy # 将打包内容发布到 github page
         uses: JamesIves/github-pages-deploy-action@v4 # 使用别人写好的 actions
         with: # 自定义环境变量
-          token: ${{ secrets.GITACTION_TEST_SECRET }} # GITACTION_TEST_SECRET 是我的 secret 名称
+          token: ${{ secrets.TEST_A_B }} # GITACTION_TEST_SECRET 是我的 secret 名称
           branch: main
           folder: dist
           repository-name: jianyixing/jianyixing.github.io # 这是我的 github page 仓库
